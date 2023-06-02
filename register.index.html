@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+ body {
+            background-color: #212121;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            
+ }
+    .card{
+        position:absolute;
+        top: 5pc;
+        left: 20pc;
+        width: 430px;
+        height: 360px;
+        border-radius: 30px;
+        background: #212121;
+        box-shadow: 15px 15px 30px rgb(25,25,25),
+        -15px -15px 30px rgb(60,60,60);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .input-field {
+            width: 70%;
+            margin-bottom: 20px;
+        }
+
+        .input-field input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-bottom: 2px solid #777;
+            background-color: transparent;
+            color: whitesmoke;
+            transition: border-color 0.3s;
+        }
+
+        .input-field input:focus {
+            outline: none;
+            border-color: #7a9cc6;
+        }
+        
+        h1 {
+            color: #777;
+            font-family: Arial;
+            font-size: small;
+            margin-top: 20px;
+            position: absolute;
+            top: 63%;
+        }
+     
+        .register {
+  position: relative;
+  top: 19%;
+  left: 5px;
+  padding: 1.3em 3em;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #777;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.register:hover {
+  background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.register:active {
+  transform: translateY(-1px);
+}
+ .username {
+ position: relative;
+ top: -4%;
+ line-height: 28px;
+ border: 2px solid transparent;
+ border-bottom-color: #777;
+ padding: .2rem 0;
+ outline: none;
+ background-color: transparent;
+ color: whitesmoke;
+ transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.username:focus, .username:hover {
+ outline: none;
+ padding: .2rem 1rem;
+ border-radius: 1rem;
+ border-color: #7a9cc6;
+}
+
+.username::placeholder {
+ color: #777;
+}
+
+.username:focus::placeholder {
+ opacity: 0;
+ transition: opacity .3s;
+}
+
+ .password {
+ position: relative;
+ top: -1%;
+ line-height: 28px;
+ border: 2px solid transparent;
+ border-bottom-color: #777;
+ padding: .2rem 0;
+ outline: none;
+ background-color: transparent;
+ color: whitesmoke;
+ transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.password:focus, .password:hover {
+ outline: none;
+ padding: .2rem 1rem;
+ border-radius: 1rem;
+ border-color: #7a9cc6;
+}
+
+.password::placeholder {
+ color: #777;
+}
+
+.password:focus::placeholder {
+ opacity: 0;
+ transition: opacity .3s;
+}
+
+ .confirm {
+ position: relative;
+ top: 2%;
+ line-height: 28px;
+ border: 2px solid transparent;
+ border-bottom-color: #777;
+ padding: .2rem 0;
+ outline: none;
+ background-color: transparent;
+ color: whitesmoke;
+ transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.confirm:focus, .confirm:hover {
+ outline: none;
+ padding: .2rem 1rem;
+ border-radius: 1rem;
+ border-color: #7a9cc6;
+}
+
+.confirm::placeholder {
+ color: #777;
+}
+
+.confirmpassword::placeholder {
+ opacity: 0;
+ transition: opacity .3s;
+}
+
+input:invalid{
+    animation:shake 300ms;
+    
+
+}
+@keyframes shake {
+    25%{
+        transform: translateX(4px);
+    }
+    50%{
+        transform: translateX(-4px);
+    }
+    75%{
+        transform: translateX(4px);
+    }
+}
+
+
+    </style>
+</head>
+
+<body>
+    <div class="card">
+  
+        <input placeholder="Username" type="text" class="username" required="">
+  
+        <input placeholder="Password" type="text" class="password" pattern="[A-z]*" required="">
+  
+        <input placeholder="Confirm Password" type="text"  class="confirm" pattern="[A-z]*" required="[A-z]*">
+  
+        <button class="register" onclick="location.href='login.html'">register</button>
+  
+        <h1>Already have an account? <a href="login.html">Log in</a></h1>
+    </div>
+</body>
+</html>

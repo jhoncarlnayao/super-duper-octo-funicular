@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+
+
+<style>
+   body {
+            background-color: #212121;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+   }
+   .card{
+        position:absolute;
+        top: 5pc;
+        left: 20pc;
+        width: 430px;
+        height: 360px;
+        border-radius: 30px;
+        background: #212121;
+        box-shadow: 15px 15px 30px rgb(25,25,25),
+        -15px -15px 30px rgb(60,60,60);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+      .social-media {           /* SOCIAL ICONS*/
+    display: flex;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    
+  }
+  
+  .social-icon {                    /* SOCIAL ICONS */
+    display: inline-block; 
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .social-icon:hover {
+    background-color: #007bff;
+  }
+  h1{
+animation: hueRotate 7s alternate infinite;
+font-family:Arial narrow ;
+font-size: small;
+color:whitesmoke;
+position:absolute;
+top: 10%;
+  }
+
+  .Return {
+  position: relative;
+  top: 11%;
+
+  padding: 1.3em 3em;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #777;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.Return:hover {
+  background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.Return:active {
+  transform: translateY(-1px);
+}
+
+
+</style>
+</head>
+<body>
+    
+<div class="card" class="social-icon">
+
+
+    <a href="https://web.facebook.com/jhoncarl.nayao" class="social-icon">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://twitter.com/jhoncarlnayao/" class="social-icon">
+        <i class="fab fa-twitter"></i>
+    </a>
+    <a href="https://www.instagram.com/nayaojhoncarl/" class="social-icon">
+        <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.tiktok.com/@jaubajauwbwkanbxisks" class="social-icon">
+        <i class="fab fa-tiktok"></i>
+    </a>
+<button class="Return" onclick="location.href='login.html'"> Return to Log in</button>
+<h1>VISIT ME HERE:</h1>
+
+
+</div>
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="login" href="login.css">
+    <script src="style.js"></script>
+
+<style>
+ 
+body {
+            background-color: #212121;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+ }
+
+
+
+
+
+
+
+    .card{
+        position:absolute;
+        top: 5pc;
+        left: 20pc;
+        width: 430px;
+        height: 360px;
+        border-radius: 30px;
+        background: #212121;
+        box-shadow: 15px 15px 30px rgb(25,25,25),
+        -15px -15px 30px rgb(60,60,60);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+     
+
+  
+  
+    .username {
+ position: relative;
+ top: 6%;
+ line-height: 28px;
+ border: 2px solid transparent;
+ border-bottom-color: #777;
+ padding: .2rem 0;
+ outline: none;
+ background-color: transparent;
+ color: whitesmoke;
+ transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.username:focus, username:hover {
+ outline: none;
+ padding: .2rem 1rem;
+ border-radius: 1rem;
+ border-color: #7a9cc6;
+}
+
+.username::placeholder {
+ color: #777;
+}
+
+.username:focus::placeholder {
+ opacity: 0;
+ transition: opacity .3s;
+}
+
+
+  .password {
+ position: relative;
+ top: 10%;
+ line-height: 28px;
+ border: 2px solid transparent;
+ border-bottom-color: #777;
+ padding: .2rem 0;
+ outline: none;
+ background-color: transparent;
+ color: whitesmoke;
+ transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.password:focus, password:hover {
+ outline: none;
+ padding: .2rem 1rem;
+ border-radius: 1rem;
+ border-color: #7a9cc6;
+}
+
+.password::placeholder {
+ color: #777;
+}
+
+.password:focus::placeholder {
+ opacity: 0;
+ transition: opacity .3s;
+}
+
+
+.login {
+  position: relative;
+  top: 26%;
+  left:24%;
+  padding: 1.3em 3em;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #777;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.login:hover {
+  background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.login:active {
+  transform: translateY(-1px);
+}
+
+
+.register {
+  position: relative;
+  top: 15.6%;
+  left:-5%;
+  padding: 1.3em 3em;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #777;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.register:hover {
+  background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.register:active {
+  transform: translateY(-1px);
+}
+
+.checkbox{
+  position: relative;
+  top: 13.5%;
+  left: -16%;
+}
+
+h1{
+  position: relative;
+  font-family: arial;
+  font-size: small;
+  top: -14%;
+  left: -2%;
+  color: #777;
+}
+
+
+
+
+</style>
+
+    
+            
+  
+
+</head>
+<body>
+
+
+
+    <div class="card">
+
+<input placeholder="Username" type="text" class="username" required="">
+<input placeholder="Password" type="password" class="password" required="">
+<input placeholder="checkbox" type="checkbox" class="checkbox" >
+<button class="login" onclick="location.href='donelogin.html'"> Log in</button>
+<button class="register" onclick="location.href='register.html'">register</button>
+<h1> Remember me </h1>
+
+
+  
+ 
+
+
+
+
+</div>
+    
+    
+
+
+
+
+
+
+
+
+
+</body>
+</html>
